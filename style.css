@@ -1,8 +1,92 @@
-*{box-sizing: border-box;
-    -webkit-font-smoothing: inherit
+*{
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+    -webkit-font-smoothing: inherit;
 }
-@media(min-width: 1200px){
-    .hidden-72rtr7{
-        display: none !important;
+
+body {
+    margin: 0;
+    padding: 0;
+    --token-22fc2857-8d93-4d7a-8bdd-ee9257ae0e99: rgb(0, 6, 26);
+    --token-19510b8f-8577-4f86-bd1c-9f33bea5dd0f: rgba(255, 255, 255, .05);
+    --token-5d1089b9-c50b-496e-8f86-d34b6e0655ea: rgba(255, 255, 255, .1);
+    --token-4124eb77-900f-4800-91c7-691537f1b552: rgb(255, 255, 255);
+    --token-cd3ff2fc-5555-437c-95e6-bf210209499b: rgb(13, 214, 232);
+    --token-9356b944-5406-4506-8fa5-4c31e1ecac2f: rgb(33, 70, 156);
+    --token-d1f61e34-6419-46d0-8653-cfb878ea4235: rgba(255, 255, 255, .7);
+    --framer-will-change-override: none;
     }
+
+.topo{
+    min-height: 100vh;
+    width: auto;
+    align-content: center;
+    align-items: center;
+    background-color: var(--token-22fc2857-8d93-4d7a-8bdd-ee9257ae0e99, #00061a);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+    .topo {
+        min-width: 768px;
+    }
+}
+
+@supports (aspect-ratio: 1) {
+    body {
+        --framer-aspect-ratio-supported: auto;
+    }
+}
+
+body, input, textarea, select, button {
+    font-size: 14px;
+}
+
+.topo .container {
+    flex: none;
+    height: auto;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: 10;
+}
+
+.container {
+    opacity: 1;
+    will-change: auto;
+    transform: none;
+}
+
+header {
+    --border-bottom-width: 0px;
+    --border-color: rgba(0, 0, 0, 0);
+    --border-left-width: 0px;
+    --border-right-width: 0px;
+    --border-style: solid;
+    --border-top-width: 0px;
+    backdrop-filter: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    opacity: 1;
+    
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
 }
